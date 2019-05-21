@@ -10,6 +10,7 @@ html, body {
 section {
   border: 1px solid gray;
   min-height: 100%;
+  overflow: scroll;
 }
 
 .title {
@@ -46,7 +47,7 @@ section {
   justify-content: center;
   align-content: center;
   padding: 4px;
-  margin: 3px;
+  margin: 8px;
   min-height: 150px;
   max-height: 150px;
   max-width: 250px;

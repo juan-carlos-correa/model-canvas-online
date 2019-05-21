@@ -7,7 +7,7 @@ const Board = () => {
   return (
     <div className="board-container">
       <Row>
-        <Column>
+        <Column className="overflow-scroll">
           <Section name="Key Partners" />
         </Column>
 
