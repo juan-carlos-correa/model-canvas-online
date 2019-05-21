@@ -1,9 +1,10 @@
 import React from 'react'
 import Board from './components/Board'
+import Title from './components/Title'
 
 const Root = () => (
   <>
-    <h1>Model canvas</h1>
+    <Title className="main-title">Model canvas</Title>
     <Board />
   </>
 )

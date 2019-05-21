@@ -1,7 +1,10 @@
 import React from 'react'
+import Title from './Title'
 
-const Section = () => (
-  <section>Section</section>
+const Section = ({ name }) => (
+  <section>
+    <Title>{name}</Title>
+  </section>
 )
 
 export default Section
