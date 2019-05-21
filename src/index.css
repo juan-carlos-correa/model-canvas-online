@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 
 html, body {
   height: 100%;
@@ -23,6 +24,7 @@ section {
 
 .board-container {
   margin: 15px;
+  background-color: #fafafa;
 }
 
 .row {
@@ -37,4 +39,25 @@ section {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+.postit {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 4px;
+  margin: 3px;
+  min-height: 150px;
+  max-height: 150px;
+  max-width: 250px;
+  border: 1px solid #E8E8E8;
+  border-top: 30px solid #fdfd86;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
 }
