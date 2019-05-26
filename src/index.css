@@ -7,9 +7,28 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+.single-column, .double-column {
+  max-height: 450px;
+  width: 20%;
+}
+
+.single-column {
+  overflow: scroll;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  max-height: 250px;
+  overflow: scroll;
+}
+
 section {
   border: 1px solid gray;
-  min-height: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  flex: 1;
   overflow: scroll;
 }
 
@@ -23,9 +42,16 @@ section {
   font-size: 40px;
 }
 
-.board-container {
+.app-container {
   margin: 15px;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
@@ -38,8 +64,6 @@ section {
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
 }
 
 .postit {
@@ -48,17 +72,12 @@ section {
   align-content: center;
   padding: 4px;
   margin: 8px;
-  min-height: 150px;
-  max-height: 150px;
   max-width: 250px;
   border: 1px solid #E8E8E8;
-  border-top: 30px solid #fdfd86;
+  border-top: 15px solid #fdfd86;
+  border-bottom: 15px solid #fdfd86;
   font-family: 'Caveat', cursive;
   font-size: 24px;
-  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+  word-wrap: break-word;
   background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
 }

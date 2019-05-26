@@ -6,43 +6,36 @@ import Section from './Section'
 const Board = () => {
   return (
     <div className="board-container">
-      <Row>
-        <Column className="overflow-scroll">
+      <Row className="row">
+        <Column extraClass="single-column">
           <Section name="Key Partners" />
         </Column>
 
-        <Column>
-          <Column>
-            <Section name ="Key Activities" />
-          </Column>
-          <Column>
-          <Section name ="Key Resources" />
-          </Column>
+        <Column extraClass="double-column">
+          <Section name="Key Activities" />
+          <Section name="Key Resources" />
         </Column>
 
-        <Column>
+        <Column extraClass="single-column">
           <Section name="Value Proposition" />
         </Column>
 
-        <Column>
-          <Column>
-            <Section name="Relationships" />
-          </Column>
-          <Column>
-            <Section name="Chanels" />
-          </Column>
+        <Column extraClass="double-column">
+          <Section name="Relationships" />
+          <Section name="Channels" />
         </Column>
 
-        <Column>
-        <Section name="Customer Segment" />
+        <Column extraClass="single-column">
+          <Section name="Customer Segment" />
         </Column>
       </Row>
-      <Row>
-        <Column>
+
+      <Row className="row">
+        <Column extraClass="footer-column">
           <Section name="Cost Structure" />
         </Column>
 
-        <Column>
+        <Column extraClass="footer-column">
           <Section name="Revenue Streams" />
         </Column>
       </Row>

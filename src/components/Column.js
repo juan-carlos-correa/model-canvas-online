@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Row = ({ children }) => (
-  <div className="column">
+const Column = ({ children, extraClass = '' }) => (
+  <div className={`column ${extraClass}`}>
     {children}
   </div>
 )
 
-export default Row
+export default Column
