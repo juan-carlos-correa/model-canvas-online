@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/model-canvas-online/static/css/main.a6ab4c26.chunk.css",
+    "main.js": "/model-canvas-online/static/js/main.f3930e79.chunk.js",
+    "main.js.map": "/model-canvas-online/static/js/main.f3930e79.chunk.js.map",
+    "runtime~main.js": "/model-canvas-online/static/js/runtime~main.c860e317.js",
+    "runtime~main.js.map": "/model-canvas-online/static/js/runtime~main.c860e317.js.map",
+    "static/js/2.1b3a0643.chunk.js": "/model-canvas-online/static/js/2.1b3a0643.chunk.js",
+    "static/js/2.1b3a0643.chunk.js.map": "/model-canvas-online/static/js/2.1b3a0643.chunk.js.map",
+    "index.html": "/model-canvas-online/index.html",
+    "precache-manifest.c314234c7facd85651ca542e520c111f.js": "/model-canvas-online/precache-manifest.c314234c7facd85651ca542e520c111f.js",
+    "service-worker.js": "/model-canvas-online/service-worker.js",
+    "static/css/main.a6ab4c26.chunk.css.map": "/model-canvas-online/static/css/main.a6ab4c26.chunk.css.map"
+  }
+}
