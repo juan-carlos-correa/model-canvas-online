@@ -9,11 +9,8 @@ html, body {
 
 .single-column, .double-column {
   max-height: 450px;
+  min-height: 450px;
   width: 20%;
-}
-
-.single-column {
-  overflow: scroll;
 }
 
 .footer-column {
@@ -21,7 +18,6 @@ html, body {
   flex-direction: row;
   width: 50%;
   max-height: 250px;
-  overflow: scroll;
 }
 
 section {
@@ -29,7 +25,7 @@ section {
   box-sizing: border-box;
   height: 100%;
   flex: 1;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .title {
@@ -70,12 +66,10 @@ section {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 4px;
+  padding: 8px 4px;
   margin: 8px;
   max-width: 250px;
   border: 1px solid #E8E8E8;
-  border-top: 15px solid #fdfd86;
-  border-bottom: 15px solid #fdfd86;
   font-family: 'Caveat', cursive;
   font-size: 24px;
   word-wrap: break-word;
