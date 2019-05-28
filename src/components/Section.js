@@ -8,7 +8,7 @@ const Section = ({ name }) => {
   const addPostit = () => {
     setPostit([
       ...postits,
-      { text: 'My Post-it example asdna adsads asd asd asd da sdasdasdd asd asdas asdasd adsas dasd asd asdasd asd asd asd asd asd asdasdasd asd' }
+      { text: '' }
     ])
   }
 
