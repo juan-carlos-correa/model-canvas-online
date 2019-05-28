@@ -5,11 +5,16 @@ import Postit from './Postit'
 const Section = ({ name }) => {
   const [postits, setPostit] = useState([{ text: 'My Post-it example' }])
 
-  const addPostit = () => {
+  const handleAddPostit = () => {
     setPostit([
       ...postits,
       { text: '' }
     ])
+  }
+
+  const handleRemove = (indexToRemove) => {
+    const postitsUpdated = postits.filter((text, index) => index !== indexToRemove)
+    setPostit(postitsUpdated)
   }
 
   return (
@@ -18,11 +23,16 @@ const Section = ({ name }) => {
 
       {
         postits.map(({ text }, index) => (
-          <Postit key={`${index}-${text}`} text={text} />
+          <Postit
+            key={index}
+            index={index}
+            text={text}
+            handleRemove={handleRemove}
+          />
         ))
       }
 
-      <button onClick={addPostit}>Add</button>
+      <button onClick={handleAddPostit}>Add</button>
     </section>
   )
 }

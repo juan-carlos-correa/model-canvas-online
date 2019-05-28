@@ -66,6 +66,7 @@ section {
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: row-reverse;
   padding: 8px 4px;
   margin: 8px;
   max-width: 250px;
@@ -85,4 +86,8 @@ section {
 
 .postit > textarea:focus {
   outline: none;
+}
+
+.remove-postit {
+  cursor: pointer
 }
